@@ -18,8 +18,8 @@ class JeuApprentissage:
     def __init__(self):
         self.nom_a_trouver = ""
         self.nom_tape = ""
-        self.image_bon = Actor("bravo")
-        self.image_bon.pos = (400, 300)
+        self.image_bon = Actor("licorne")
+        self.image_bon.pos = (200, 300)
         self.show_image = False
         self.callback_nouveau_nom = False
         self.callback_bravo = False

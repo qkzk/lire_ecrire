@@ -37,3 +37,7 @@ python main.py
 ```
 
 Make sure you have your list of words and images prepared and correctly referenced in the code.
+
+## ChatGPT
+
+Made with the help of chatGPT since it's very basic.

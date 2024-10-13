@@ -1,7 +1,3 @@
-Voici un modèle de fichier **`README.md`** pour ton projet, en anglais, avec les différentes sections demandées :
-
----
-
 # Learning Game for Kids - Reading and Writing Practice
 
 This Python project is a simple game designed for children who are learning to read and write. The game displays a random word on the screen, reads it aloud using text-to-speech (TTS), and the child types the word. If the child types the word correctly, they are congratulated with a sound and a fun image. The game is designed to be forgiving of typing mistakes, allowing children to correct themselves as they play.

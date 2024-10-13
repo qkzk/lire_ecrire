@@ -8,8 +8,8 @@ from noms_communs import NOMS_COMMUNS
 
 
 TITLE = "Ecouter Lire Ecrire"
-WIDTH = 800
-HEIGHT = 600
+WIDTH = 1920
+HEIGHT = 1080
 
 
 class JeuApprentissage:
@@ -19,7 +19,7 @@ class JeuApprentissage:
         self.nom_a_trouver = ""
         self.nom_tape = ""
         self.image_bon = Actor("licorne")
-        self.image_bon.pos = (200, 300)
+        self.image_bon.pos = (300, 400)
         self.show_image = False
         self.callback_nouveau_nom = False
         self.callback_bravo = False
@@ -86,10 +86,17 @@ def draw():
 
     # Affiche le mot à trouver et le mot tapé jusqu'à présent
     screen.draw.text(
-        f"Mot : {jeu.nom_a_trouver}", midtop=(400, 100), fontsize=50, color="white"
+        jeu.nom_a_trouver,
+        center=(WIDTH / 2, HEIGHT / 3),
+        fontsize=50,
+        color="white",
     )
-    screen.draw.text(f"Votre saisie :", midtop=(400, 200), fontsize=50, color="orange")
-    screen.draw.text(jeu.nom_tape, midtop=(400, 300), fontsize=50, color="pink")
+    screen.draw.text(
+        f"Votre saisie :", center=(WIDTH / 2, HEIGHT / 2), fontsize=50, color="orange"
+    )
+    screen.draw.text(
+        jeu.nom_tape, center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=50, color="pink"
+    )
 
     # Affiche l'image si le mot est correctement tapé
     if jeu.show_image:

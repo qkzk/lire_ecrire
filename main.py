@@ -4,7 +4,7 @@ from gtts import gTTS
 import pgzrun
 import pygame
 
-from noms_communs import noms_communs
+from noms_communs import NOMS_COMMUNS
 
 
 TITLE = "Ecouter Lire Ecrire"
@@ -28,7 +28,7 @@ class JeuApprentissage:
     def choisir_nouveau_nom(self):
         """Choisit un nom au hasard et lance la lecture avec gTTS."""
         print("choisir_nouveau_nom")
-        self.nom_a_trouver = random.choice(noms_communs).lower()
+        self.nom_a_trouver = random.choice(NOMS_COMMUNS).lower()
         self.nom_tape = ""
         self.show_image = False
         self.callback_bravo = False

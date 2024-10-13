@@ -1,4 +1,4 @@
-noms_communs = [
+NOMS_COMMUNS = [
     "abeille",
     "abricot",
     "accident",
@@ -580,7 +580,6 @@ noms_communs = [
     "sourire",
     "souvenir",
     "spectacle",
-    "sphere",
     "sport",
     "statue",
     "style",

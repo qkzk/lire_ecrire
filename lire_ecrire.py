@@ -1,10 +1,20 @@
 import random
+import os
 
 from gtts import gTTS
 import pgzrun
 import pygame
 
+from pgzero.actor import Actor
+from pgzero.keyboard import Keyboard
+from pgzero.screen import Screen
+
 from noms_communs import NOMS_COMMUNS
+
+screen: Screen
+keyboard: Keyboard
+
+os.environ["SDL_VIDEO_CENTERED"] = "1"
 
 
 TITLE = "Ecouter Lire Ecrire"
